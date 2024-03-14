@@ -1,0 +1,245 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Rendezvous, Exploration, Explore Lite, ROS">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Frontier-Based Exploration and Rendezvous for Multi-Robot Teams in
+        Communication-Restricted Environments: an Evaluation</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro|Crimson+Text"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="icon" href="./static/images/HoloDeckLogo.svg">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
+
+</head>
+
+<body>
+
+<section class="hero">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column has-text-centered">
+                    <h1 class="title is-1 publication-title">
+                        <!--<span class="house-svg"></span>-->
+                        Frontier-Based Exploration and <span class="small-caps">Rendezvous</span> for Multi-Robot Teams in
+                        Communication-Restricted Environments: an Evaluation
+                    </h1>
+                    <div class="is-size-5 publication-authors">
+                    <span class="author-block">
+              <a href="https://github.com/maurotella">Mauro Tellaroli</a><sup>1</sup>,
+            </span>
+                        <span class="author-block">
+              <a href="http://luperto.di.unimi.it">Matteo Luperto</a><sup>1</sup>,
+            <span class="author-block">
+              <a href="https://antonazzi.di.unimi.it">Michele Antonazzi</a><sup>1</sup>,
+            </span>
+                        <span class="author-block">
+              <a href="https://basilico.di.unimi.it">Nicola Basilico</a><sup>1</sup>,
+            </span>
+
+                    </div>
+                    <div class="is-size-5 publication-authors">
+                        <span class="author-block"><sup>1</sup></span></sup>All authors are with the Department of Computer Science, University of
+                        Milan, Milano, Italy</span>&nbsp;&nbsp;
+
+                    </div>
+
+                    <div class="is-size-5 emails">
+            <span class="emails">
+              <a href="mailto: yueyang1@seas.upenn.edu">name.surname@unimi.it</a>&nbsp;&nbsp;
+            </span>
+
+                    </div>
+
+                    <!-- </div> -->
+                    <div class="column has-text-centered">
+                        <div class="publication-links">
+                            <!-- PDF Link. -->
+
+                            <!-- arxiv Link. -->
+                            <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/aislabunimi/door-detection-long-term/tree/bbox_filtering"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+                            <!-- Email Link. -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="section", id="abstract">
+    <div class="container is-max-desktop">
+        <!-- Abstract. -->
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-five-fifths">
+                <h2 class="title is-3">Abstract</h2>
+                <div class="content has-text-justified">
+                    <p>
+                        We introduce a novel approach for scalable domain adaptation in cloud robotics scenarios where robots rely on third-party AI inference services powered by large pre-trained deep neural networks. Our method is based on a downstream proposal-refinement stage running locally on the robots, explotiting a new lightweight DNN architecture, R2SNet. This architecture aims to mitigate performance degradation from domain shifts by adapting the object detection process to the target environment, focusing on relabeling, rescoring, and suppression of bounding-box proposals. Our method allows for local execution on robots, addressing the scalability challenges of domain adaptation without incurring significant computational costs. Real-world results on mobile service robots performing door detection show the effectiveness of the proposed method in achieving scalable domain adaptation.                     </p>
+                </div>
+            </div>
+        </div>
+        <!--/ Abstract. -->
+    </div>
+</section>
+
+<section class="section" id="demo">
+    <div class="container is-max-desktop has-text-centered">
+        <div class="container is-clipped">
+            <div id="slider">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image ">
+                            <img
+                                    src="static/images/scenario.png"
+                                    alt=""
+                            />
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="item__title">
+                            Application scenario
+                        </div>
+                        <div class="item__description">
+                            <!--Ici une petite description pour tester le slider-->
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-covered ">
+                            <img
+                                    src="static/images/main_architecture.png"
+                                    alt=""
+                            />
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="item__title">
+                            Main Architecture
+                        </div>
+                        <div class="item__description">
+                            <!--Ici une petite description pour tester le slider-->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-covered ">
+                            <img
+                                    src="static/images/background_network.png"
+                                    alt=""
+                            />
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="item__title">
+                            BFNet
+                        </div>
+                        <div class="item__description">
+                            <!--Ici une petite description pour tester le slider-->
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <script>
+            bulmaCarousel.attach('#slider', {
+                slidesToScroll: 1,
+                slidesToShow: 1,
+                infinite: true,
+            });
+        </script>
+        <!--
+        <p class="has-text-centered">
+            <span class="dnerf">Holodeck</span> can generate diverse types of 3D environments (arcade, spa, museum), customize for styles (victorian, bohemian), and understand fine-grained requirements ("has a cat", "fan of Star Wars").
+        </p>
+        -->
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+<section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+        <h2 class="title is-3">BibTeX</h2>
+        <pre style="font-size: 16px;"><code>@article{TODO
+}</code></pre>
+    </div>
+</section>
+-->
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <a class="icon-link" href="../papers/holodeck.pdf" class="external-link" disabled>
+                <i class="fas fa-file-pdf"></i>
+            </a>
+            <a class="icon-link" href="https://arxiv.org/abs/2312.09067" class="external-link" disabled>
+                <i class="ai ai-arxiv"></i>
+            </a>
+            <a class="icon-link" href="https://github.com/aislabunimi/door-detection-long-term/tree/bbox_filtering" class="external-link" disabled>
+                <i class="fab fa-github"></i>
+            </a>
+
+        </div>
+        <div class="columns is-centered">
+            <div class="column is-8">
+                <div class="content", style="text-align: center;">
+                    <p>
+                        This website was developed by referencing <a href="https://yueyang1996.github.io/holodeck/">this</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
