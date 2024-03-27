@@ -102,7 +102,34 @@
     </div>
 </section>
 
+<section class="section", id="intro">
+    <div class="container is-max-desktop">
+        <!-- Abstract. -->
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-five-fifths">
+                <div class="columns">
+                    <div class="column is-half">
+                        <p style="font-size: 1.2em"><b>FBR (our)</b></p>
 
+                        <video autoplay muted playsinline loop>
+                            <source src="static/videos/exp_2_fbr.mp4" type="video/mp4">
+                        </video>
+
+                    </div>
+                    <div class="column is-half">
+                        <p style="font-size: 1.2em"><b>FBE 3X</b></p>
+                        <video autoplay muted playsinline loop>
+                            <source src="static/videos/exp_2_fbe.mp4" type="video/mp4">
+                        </video>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--/ Abstract. -->
+    </div>
+</section>
 
 <section class="section", id="abstract">
     <div class="container is-max-desktop">
@@ -182,6 +209,105 @@
                 <div class="content is-centered">
 
                 </div>
+
+            </div>
+        </div>
+        <!--/ Abstract. -->
+    </div>
+</section>
+
+
+<section class="section", id="method">
+    <div class="container is-max-desktop">
+        <!-- Abstract. -->
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-five-fifths">
+                <h2 class="title is-3">Method</h2>
+
+                <div class="content has-text-justified">
+                    <p>
+                        We propose an extension of the classical Frontier-Based Exploration (<b>FBE</b>) biased towards Rendezvous (hence the acronym <b>FBR</b>).
+                        Frontiers are created not
+                        only for their potential contribution to the map's expansion
+                        but also to increase the
+                        opportunity of meeting a teammate. To do so, we introduce
+                        an <b>exploration trace</b> with an information decay mechanism
+                        that allows each robot to forget about parts
+                        of the environment that have been explored and mapped, creating <b>hallucinated frontiers</b>.
+                        In this way, the robot
+                        is encouraged to backtrack on previously explored areas facilitating accidental rendezvous.
+                        When robot meet, they from a cluster merging their exploration trace and sharing the frontiers.
+                        When a new cluster is formed, the leader continue the exploration strategy with hallucinated frontiers,
+                        while the other members are followers. The rendezvous is completed when all robots are inside the same cluster.
+                    </p>
+                </div>
+                <div class="columns">
+                    <div class="column is-half">
+                        <video autoplay muted playsinline loop>
+                            <source src="./static/videos/frontiers.mp4" type="video/mp4">
+                        </video>
+                        <p style="font-size: 0.8em">A robot navigating with it exploration trace (in red). Frontiers for exploration and rendezvous (hallucinated) are in blue and green.</p>
+
+                    </div>
+                    <div class="column is-half">
+                        <video autoplay muted playsinline loop>
+                            <source src="./static/videos/sharing.mp4" type="video/mp4">
+                        </video>
+                        <p style="font-size: 0.8em">
+                            Frontier sharing when two robots join a cluster.
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <!--/ Abstract. -->
+    </div>
+</section>
+
+<section class="section", id="experiments">
+    <div class="container is-max-desktop">
+        <!-- Abstract. -->
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-five-fifths">
+                <h2 class="title is-3">Experiments</h2>
+
+                <div class="content has-text-justified">
+                    <p>
+                        We validate our approach with an extensive experimental campaign in realistic simulations, considering sensors noise and robot failures.
+                        We perform more than 180 real-time runs with a Turtlebot-3 burger exploring large environments simulated with Gazebo.
+                        The results demonstrate that our method encourages the robots to backtrack on previously-visited location,
+                        facilitating accidental rendezvous. Robots using FBR perform a rendezvous with a speed-up of approx. 50% with respect to a classic frontier-based approach (FBE).
+
+                    </p>
+                </div>
+                <div class="columns">
+                    <div class="column is-half">
+                        <p style="font-size: 1.2em"><b>FBR (our)</b></p>
+
+                        <video autoplay muted playsinline loop>
+                            <source src="static/videos/exp_1_fbr.mp4" type="video/mp4">
+                        </video>
+
+                    </div>
+                    <div class="column is-half">
+                        <p style="font-size: 1.2em"><b>FBE 2X</b></p>
+                        <video autoplay muted playsinline loop>
+                            <source src="static/videos/exp_1_fbe.mp4" type="video/mp4">
+                        </video>
+
+                    </div>
+                </div>
+                <div class="content">
+                    <p style="font-size: 0.8em">
+                        Rendezvous paths obtained with our method (FBR – first row) and the baseline (FBE – second row) in a series of environments.
+                    </p>
+                    <img src="static/images/maps_final.png">
+
+                </div>
+
+
 
             </div>
         </div>
